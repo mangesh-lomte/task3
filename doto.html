@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="dododo.css>
+  <script src="dotodo.js"></script>
+</head>
+<body>
+  <h1>To-Do List</h1>
+  
+  <div class="container">
+    <div class="form">
+      <input type="text" id="taskInput" placeholder="Enter a task">
+      <button onclick="addTask()">Add</button>
+    </div>
+    
+    <div class="filter">
+      <label for="filter">Filter:</label>
+      <select id="filter" onchange="filterTasks()">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="incomplete">Incomplete</option>
+      </select>
+    </div>
+    
+    <div class="task-list" id="taskList">
+      <!-- Tasks will be dynamically added here -->
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
